@@ -4,9 +4,9 @@ import { useRouter } from "next/navigation";
 import { useSearchParams } from "next/navigation";
 import jwt from "jsonwebtoken";
 import DashboardLayout from "../componests/DashboardLayout";
-import Personas from "../componests/Personas";
-import Examenes from "../componests/Examenes";
-import OrderForm from "../componests/OrdenForm";
+//import Personas from "../componests/Personas";
+//import Examenes from "../componests/Examenes";
+//import OrderForm from "../componests/OrdenForm";
 
 export default function DashboardPage() {
   const [user, setUser] = useState(null);
@@ -74,7 +74,7 @@ export default function DashboardPage() {
   };
 
   const renderView = () => {
-    switch (view) {
+    /*switch (view) {
       case "personas":
         return <Personas />;
       case "examenes":
@@ -83,7 +83,7 @@ export default function DashboardPage() {
           return <OrderForm />;
       default:
         return <p>Bienvenido</p>;
-    }
+    }*/
   };
 
   // Función para formatear el tiempo restante en formato de minutos y segundos

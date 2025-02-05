@@ -36,7 +36,31 @@ export default function Menu() {
           variant="contained"
           color="secondary"
           fullWidth
+          onClick={() => handleNavigation("estadoCivil")}
+        >
+          Estado civil
+        </Button>
+        <Button
+          variant="contained"
+          color="secondary"
+          fullWidth
+          onClick={() => handleNavigation("generos")}
+        >
+          Sexo
+        </Button>
+        <Button
+          variant="contained"
+          color="secondary"
+          fullWidth
           onClick={() => handleNavigation("examenes")}
+        >
+          Exámenes
+        </Button>
+        <Button
+          variant="contained"
+          color="secondary"
+          fullWidth
+          onClick={() => handleNavigation("medicamentos")}
         >
           Exámenes
         </Button>
@@ -44,17 +68,73 @@ export default function Menu() {
           variant="contained"
           color="success"
           fullWidth
-          onClick={() => handleNavigation("ordenesform")}
+          onClick={() => handleNavigation("consultorios")}
         >
-          Ingresar Órdenes
+          Consultorios
         </Button>
         <Button
           variant="contained"
           color="success"
           fullWidth
-          onClick={() => handleNavigation("ordeneslist")}
+          onClick={() => handleNavigation("especialidades")}
         >
-          Listar Órdenes
+          Medicos
+        </Button>
+        <Button
+          variant="contained"
+          color="success"
+          fullWidth
+          onClick={() => handleNavigation("medicos")}
+        >
+          Medicos
+        </Button>
+        <Button
+          variant="contained"
+          color="success"
+          fullWidth
+          onClick={() => handleNavigation("turnos")}
+        >
+          Turnos
+        </Button>
+        <Button
+          variant="contained"
+          color="success"
+          fullWidth
+          onClick={() => handleNavigation("facturar")}
+        >
+          Facturar
+        </Button>
+        <Button
+          variant="contained"
+          color="success"
+          fullWidth
+          onClick={() => handleNavigation("atencion")}
+        >
+          Atencion
+        </Button>
+        <Button
+          variant="contained"
+          color="success"
+          fullWidth
+          onClick={() => handleNavigation("ordenDeExamenes")}
+        >
+          Orden de examens
+        </Button>
+        <Button
+          variant="contained"
+          color="success"
+          fullWidth
+          onClick={() => handleNavigation("recetaMedica")}
+        >
+          Receta medica
+        </Button>
+        <Button
+          variant="contained"
+          color="success"
+          fullWidth
+          onClick={() => handleNavigation("tratamiento")}
+        >
+          Tratamiento
         </Button>
       </Stack>
     </Paper>
